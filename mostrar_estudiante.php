@@ -139,7 +139,7 @@ PACIENTES                        </div>
 
          <th> <a href="modulos/modificar.php?id=<?php echo $row['id_estudiante']; ?>"> Modificar</a> 
           | <a href="modulos/eliminar.php?id=<?php echo $row['id_estudiante']; ?>"  > Eliminar</a> 
-                    | <a href="modulos/imprimir.php?id=<?php echo $row['id_estudiante']; ?>">Imprimir ficha</a> </th>
+                    | <a  target="_blank" href="modulos/imprimir.php?id=<?php echo $row['id_estudiante']; ?>">Imprimir ficha</a> </th>
     
          </tr>
 

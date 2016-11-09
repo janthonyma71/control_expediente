@@ -81,17 +81,17 @@ $telefono_micro = $_POST['telefono_micro'];
 		}
 	echo "<br>".$id_datos_generales;
            
-	$sql="INSERT INTO informacion_encargado(dui,cargo,profesion,correo,direccion_casa_encargado,telefono_trabajo,direccion_trabajo,celular,nombre,apellido, id_encargado,id_estudiante) VALUES ('$dui_padre','$cargo_desempeña_padre','$profesion_padre','$correo_padre','$direc_casa_padre','$trabajo_padre','$trabajo_padre','$cel_padre','$nombre_padre','$apellido_padre',1,'$id_datos_generales')";
+	$sql="INSERT INTO informacion_encargado(dui,cargo,profesion,correo,direccion_casa_encargado,telefono_casa_encargado,telefono_trabajo,direccion_trabajo,celular,nombre,apellido, id_encargado,id_estudiante) VALUES ('$dui_padre','$cargo_desempeña_padre','$profesion_padre','$correo_padre','$direc_casa_padre','$tel_casa_padre','$cel_padre','$trabajo_padre','$cel_padre','$nombre_padre','$apellido_padre',1,'$id_datos_generales')";
 
 	
 	$resultado = $conexion -> query($sql);
 
-	$sql="INSERT INTO informacion_encargado(dui,cargo,profesion,correo,direccion_casa_encargado,telefono_trabajo,direccion_trabajo,celular,nombre,apellido, id_encargado,id_estudiante) VALUES ('$dui_madre','$cargo_desempeña_madre','$profesion_madre','$correo_madre','$direc_casa_madre','$trabajo_madre','$trabajo_madre','$cel_madre','$nombre_madre','$apellido_madre',2,'$id_datos_generales')";
+	$sql="INSERT INTO informacion_encargado(dui,cargo,profesion,correo,direccion_casa_encargado,telefono_casa_encargado,telefono_trabajo,direccion_trabajo,celular,nombre,apellido, id_encargado,id_estudiante) VALUES ('$dui_madre','$cargo_desempeña_madre','$profesion_madre','$correo_madre','$direc_casa_madre','$tel_casa_madre','$cel_madre','$trabajo_madre','$cel_madre','$nombre_madre','$apellido_madre',2,'$id_datos_generales')";
 
 	
 	$resultado = $conexion -> query($sql);
 
-	$sql="INSERT INTO informacion_encargado(dui,cargo,profesion,correo,direccion_casa_encargado,telefono_trabajo,direccion_trabajo,celular,nombre,apellido, id_encargado,id_estudiante) VALUES ('$dui_responsable','$cargo_desempeña_responsable','$profesion_responsable','$correo_responsable','$direc_casa_responsable','$trabajo_responsable','$trabajo_responsable','$cel_responsable','$nombre_responsable','$apellido_responsable',3,'$id_datos_generales')";
+	$sql="INSERT INTO informacion_encargado(dui,cargo,profesion,correo,direccion_casa_encargado,telefono_casa_encargado,telefono_trabajo,direccion_trabajo,celular,nombre,apellido, id_encargado,id_estudiante) VALUES ('$dui_responsable','$cargo_desempeña_responsable','$profesion_responsable','$correo_responsable','$direc_casa_responsable','$tel_casa_responsable','$cel_responsable','$trabajo_responsable','$cel_responsable','$nombre_responsable','$apellido_responsable',3,'$id_datos_generales')";
 
 	
 	$resultado = $conexion -> query($sql);
