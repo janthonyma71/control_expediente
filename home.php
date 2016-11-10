@@ -39,13 +39,13 @@ include("sql/mostrar.php");
               
                        
                 <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false" >
                         <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
                     </a>
                     <ul class="dropdown-menu dropdown-user">
                         <li><a href="#"><i class="fa fa-user fa-fw"></i> Perfil  (<?php echo $nombre.' '.$apellido;?> )</a>
                         </li>
-                        <li><a href="#"><i class="fa fa-gear fa-fw"></i>Herramientas</a>
+                        <li><a href="modulos/herramientas.php"><i class="fa fa-gear fa-fw"></i>Herramientas</a>
                         </li>
                         <li class="divider"></li>
                         <li><a href="modulos/cerrar_sesion.php"><i class="fa fa-sign-out fa-fw"></i>Cerrar Sesion</a>
@@ -62,15 +62,8 @@ include("sql/mostrar.php");
             <div class="sidebar-collapse">
                 <ul class="nav" id="main-menu">
 
-                    <li>
-                        <a class="active-menu" href="home.php"><i class="fa fa-edit"></i> Agregar usuario</a>
-                    </li>
-                    <li>
-                        <a href="agregar_estudiante.php"><i class="fa fa-edit"></i> Agregar Estudiante</a>
-                    </li>
-					<li>
-                        <a href="mostrar_estudiante.php"><i class="fa fa-bar-chart-o"></i> Estudiantes</a>
-                    </li>
+                     <?php @session_start();
+include_once('sql/pantallas.php') ?>
                    
                 </ul>
 

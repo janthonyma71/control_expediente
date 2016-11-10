@@ -127,8 +127,7 @@ Estudiantes                        </div>
          <td><?php echo $row['Nombre']; ?> </td>
          <td><?php echo $row['celular']; ?> </td>
 
-         <th> <a href="modulos/modificar.php?id=<?php echo $row['id_estudiante']; ?>"> Modificar</a> 
-          |   <a  target="_blank" href="modulos/imprimir.php?id=<?php echo $row['id_estudiante']; ?>">Imprimir ficha</a> </th>
+         <th>   <a  target="_blank" href="modulos/imprimir.php?id=<?php echo $row['id_estudiante']; ?>">Imprimir ficha</a> </th>
     
          </tr>
 

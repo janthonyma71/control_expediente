@@ -85,7 +85,7 @@ require("../sql/conexion.php");
 			<td > &nbsp;&nbsp;&nbsp;&nbsp;</td>
 			</tr>
 			<tr>
-			    <td colspan = 2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Grado al que desea ingresar:</strong> <u> '.$row['grado'].'</u></td><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>NIE:</strong><u> '.$row['NIE'].'</u></td>
+			    <td colspan = 3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Grado al que desea ingresar:</strong> <u> '.$row['grado'].'</u></td><td colspan = 2><strong>NIE:</strong><u> '.$row['NIE'].'</u></td>
 			</tr>
 			<tr>
 			<td > &nbsp;&nbsp;</td>
@@ -109,7 +109,7 @@ require("../sql/conexion.php");
 			    <td colspan = 3> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Centro de estudio de donde procede:</strong> <u> '.$row['estudio_anterior'].'</u></td>
 			
 			<tr>
-			    <td colspan = 3> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Razon por la que retiro de su centro de estudio :</strong>  <u>'.$row['razon_retiro'].'</u></td>
+			    <td colspan = 3> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Razon por la que retiro de su centro de estudio :</strong>  </td><td colspan = 2><u>'.$row['razon_retiro'].'</u></td>
 			<tr>
 			<td > &nbsp;&nbsp;&nbsp;&nbsp;</td>
 			</tr><tr>
@@ -133,7 +133,7 @@ require("../sql/conexion.php");
 
 			
 			<tr>
-			    <td colspan = 2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Telefono casa:</strong><u>  '.$row['telefono_casa_padre'].'</u></td><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Telefono celular:</strong><u> '.$row['celular_padre'].'</u></td>
+			    <td colspan = 2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Telefono casa:</strong><u>  '.$row['telefono_casa_padre'].'</u></td><td colspan = 2><strong>Telefono celular:</strong><u> '.$row['celular_padre'].'</u></td>
 			</tr>
 			
 			<tr>
@@ -147,7 +147,7 @@ require("../sql/conexion.php");
 
 			
 			<tr>
-			    <td colspan = 2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Cargo que desempeña:</strong><u>  '.$row['cargo_padre'].'</u></td><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Profesion:</strong><u> '.$row['profesion_padre'].'</u></td>
+			    <td colspan = 2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Cargo que desempeña:</strong><u>  '.$row['cargo_padre'].'</u></td><td colspan = 2><strong>Profesion:</strong><u> '.$row['profesion_padre'].'</u></strong></td>
 			</tr>
 			<tr>
 			    <td colspan = 3> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Correo:</strong>  <u>'.$row['correo_padre'].'</u></td>
@@ -189,7 +189,7 @@ require("../sql/conexion.php");
 
 			
 			<tr>
-			    <td colspan = 2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Telefono casa:</strong><u>  '.$row1['telefono_casa_madre'].'</u></td><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Telefono celular:</strong><u> '.$row1['celular_madre'].'</u></td>
+			    <td colspan = 2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Telefono casa:</strong><u>  '.$row1['telefono_casa_madre'].'</u></td><td colspan = 2><strong>Telefono celular:</strong><u> '.$row1['celular_madre'].'</u></td>
 			</tr>
 			
 			<tr>
@@ -203,7 +203,7 @@ require("../sql/conexion.php");
 
 			
 			<tr>
-			    <td colspan = 2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Cargo que desempeña:</strong><u>  '.$row1['cargo_madre'].'</u></td><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Profesion:</strong><u> '.$row1['profesion_madre'].'</u></td>
+			    <td colspan = 2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Cargo que desempeña:</strong><u>  '.$row1['cargo_madre'].'</u></td><td colspan = 2>&nbsp;&nbsp;&nbsp;<strong>Profesion:</strong><u> '.$row1['profesion_madre'].'</u></td>
 			</tr>
 			<tr>
 			    <td colspan = 3> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Correo:</strong>  <u>'.$row1['correo_madre'].'</u></td>
@@ -231,7 +231,7 @@ require("../sql/conexion.php");
 
 			
 			<tr>
-			    <td colspan = 2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Telefono casa:</strong><u>  '.$row2['telefono_casa_encargado'].'</u></td><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Telefono celular:</strong><u> '.$row2['celular_encargado'].'</u></td>
+			    <td colspan = 2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Telefono casa:</strong><u>  '.$row2['telefono_casa_encargado'].'</u></td><td colspan = 2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Telefono celular:</strong><u> '.$row2['celular_encargado'].'</u></td>
 			</tr>
 			
 			<tr>
@@ -245,7 +245,7 @@ require("../sql/conexion.php");
 
 			
 			<tr>
-			    <td colspan = 2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Cargo que desempeña:</strong><u>  '.$row2['cargo_encargado'].'</u></td><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Profesion:</strong><u> '.$row2['profesion_encargado'].'</u></td>
+			    <td colspan = 2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Cargo que desempeña:</strong><u>  '.$row2['cargo_encargado'].'</u></td><td colspan = 2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Profesion:</strong><u> '.$row2['profesion_encargado'].'</u></td>
 			</tr>
 			<tr>
 			    <td colspan = 3> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Correo:</strong>  <u>'.$row2['correo_encargado'].'</u></td>
@@ -268,38 +268,26 @@ require("../sql/conexion.php");
 			 <tr>
 			    <td colspan = 3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong><u>OTROS DATOS</strong></u> </td>
 			</tr>
-			<tr>
-			<td > &nbsp;&nbsp;&nbsp;&nbsp;</td>
-			</tr>
+			
 			<tr>
 			    <td colspan = 3> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Estado Civil de los padres :</strong> <u> '.$row3['estado_civil'].'</u></td>
-			<tr>
-			<td > &nbsp;&nbsp;&nbsp;&nbsp;</td>
-			</tr>
+			
 			<tr>
 			    <td colspan = 3> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Auqe iglesia asiste :</strong> <u> '.$row3['iglesia'].' </u></td>
-			<tr>
-			<td > &nbsp;&nbsp;&nbsp;&nbsp;</td>
-			</tr>
+			
 			<tr>
 			    <td colspan = 3> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>En caso de emergencia avisar a:</strong><u> '.$row3['emergencia'].'</u></td>
 			    			</tr>
-<tr>
-			<td > &nbsp;&nbsp;&nbsp;&nbsp;</td>
-			</tr>
+
 			
 				<tr>
 			    <td colspan = 3> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>En Que parentesco tiene con la persona:</strong><u> '.$row3['parentesco'].'</u></td>
 			    			</tr>
-			<tr>
-			<td > &nbsp;&nbsp;&nbsp;&nbsp;</td>
-			</tr>
+			
 			<tr>
 			    <td colspan = 3> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Telefono:</strong> <u> '.$row3['telefono_paren'].'</u></td>
 			    			</tr>
-<tr>
-			<td > &nbsp;&nbsp;&nbsp;&nbsp;</td>
-			</tr>
+
 			<tr>
 			    <td colspan = 5> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Persona autorizada por el responsable para retirar al alumn@ de la</strong>
 </td>
@@ -308,30 +296,20 @@ require("../sql/conexion.php");
 <td colspan = 5>
 			     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>institucion, cuando el responsable no pueda venir a retirarlo:</strong><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>'.$row3['persona_autorizada'].'</u></td>
 			</tr>
-			<tr>
-			<td > &nbsp;&nbsp;&nbsp;&nbsp;</td>
-			</tr>
+			
 	<tr>
 			    <td colspan = 3> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Telefono:</strong> <u> '.$row3['telefono_autorizado'].'</u></td>
-			    			</tr><tr>
-			<td > &nbsp;&nbsp;&nbsp;&nbsp;</td>
-			</tr>
+			    			</tr>
 				<tr>
 			    <td colspan = 4> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Otro responsable:</strong> <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>'.$row3['otra_persona'].'</u></td>
 			</tr>
-			<tr>
-			<td > &nbsp;&nbsp;&nbsp;&nbsp;</td>
-			</tr>
+			
 			<tr>
 			    <td colspan = 3> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Telefono:</strong>  <u>'.$row3['telefono'].'</u></td>
-			    			</tr><tr>
-			<td > &nbsp;&nbsp;&nbsp;&nbsp;</td>
-			</tr>
+			    			</tr>
 				<tr>
 			    <td colspan = 3> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Si se va en microbus, nombre responsable:</strong>  <u>'.$row3['persona_micro'].'</u></td>
-			    			</tr><tr>
-			<td > &nbsp;&nbsp;&nbsp;&nbsp;</td>
-			</tr>
+			    			</tr>
 			    				<tr>
 			    <td colspan = 3> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Telefono celular:</strong>  <u>'.$row3['celular_micro'].'</u></td>
 			    			</tr>

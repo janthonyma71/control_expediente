@@ -19,7 +19,9 @@
 </head>
 <body>
 
-
+<?php 
+include("../sql/mostrar_modulo.php");
+ ?>
     <div id="wrapper">
         <nav class="navbar navbar-default top-navbar" role="navigation">
             <div class="navbar-header">
@@ -36,18 +38,20 @@
       
                
                 <!-- /.dropdown -->
-                <li class="dropdown">
+                 <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">
                         <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
                     </a>
                      <ul class="dropdown-menu dropdown-user">
                         <li><a href="#"><i class="fa fa-user fa-fw"></i> Perfil  (<?php echo $nombre.' '.$apellido;?> )</a>
                         </li>
-                        <li><a href="#"><i class="fa fa-gear fa-fw"></i>Herramientas</a>
+                        <li><a href="herramientas.php"><i class="fa fa-gear fa-fw"></i>Herramientas</a>
                         </li>
                         <li class="divider"></li>
-                        <li><a href="../modulos/cerrar_sesion.php"><i class="fa fa-sign-out fa-fw"></i>Cerrar Sesion</a>
+                        <li><a href="cerrar_sesion.php"><i class="fa fa-sign-out fa-fw"></i>Cerrar Sesion</a>
                         </li>
+          
+
                     </ul>
                     <!-- /.dropdown-user -->
                 </li>
@@ -59,17 +63,9 @@
             <div class="sidebar-collapse">
                 <ul class="nav" id="main-menu">
 
-                  <li>
-                        <a  href="../home.php"><i class="fa fa-edit"></i> Agregar usuario</a>
-                    </li>
-                    <li>
-                        <a  href="../agregar_estudiante.php"><i class="fa fa-edit"></i> Agregar Estudiante</a>
-                    </li>
-                    <li>
-                        <a class="active-menu" href="../mostrar_estudiante.php"><i class="fa fa-bar-chart-o"></i>Estudiantes</a>
-                    </li>
-                        </ul>
-                    </li>
+                        <?php @session_start();
+include_once('../sql/pantalla_modulo.php') ?>
+
                  
                 </ul>
 
@@ -569,21 +565,21 @@
      <!-- /. WRAPPER  -->
     <!-- JS Scripts-->
     <!-- jQuery Js -->
-    <script src="assets/js/jquery-1.10.2.js"></script>
+    <script src="../assets/js/jquery-1.10.2.js"></script>
       <!-- Bootstrap Js -->
-    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
     <!-- Metis Menu Js -->
-    <script src="assets/js/jquery.metisMenu.js"></script>
+    <script src="../assets/js/jquery.metisMenu.js"></script>
      <!-- DATA TABLE SCRIPTS -->
-    <script src="assets/js/dataTables/jquery.dataTables.js"></script>
-    <script src="assets/js/dataTables/dataTables.bootstrap.js"></script>
+    <script src="../assets/js/dataTables/jquery.dataTables.js"></script>
+    <script src="../assets/js/dataTables/dataTables.bootstrap.js"></script>
         <script>
             $(document).ready(function () {
                 $('#dataTables-example').dataTable();
             });
     </script>
          <!-- Custom Js -->
-    <script src="assets/js/custom-scripts.js"></script>
+    <script src="../assets/js/custom-scripts.js"></script>
     
    
 </body>
