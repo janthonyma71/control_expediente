@@ -3,7 +3,7 @@
 <head>
       <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Howard Garden</title>
+    <title>Howard Gardner</title>
     <!-- Bootstrap Styles-->
     <link href="assets/css/bootstrap.css" rel="stylesheet" />
      <!-- FontAwesome Styles-->
@@ -27,11 +27,11 @@ include("sql/mostrar.php");
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
                     <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar">df</span>
-                    <span class="icon-bar">dfs</span>
-                    <span class="icon-bar">fds</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="home.php"><i class="fa fa-gear"></i> <strong>Howard</strong></a>
+                <a class="navbar-brand" href="#"><i class="fa fa-gear"></i> <strong>Howard</strong></a>
             </div>
 
             <ul class="nav navbar-top-links navbar-right">
@@ -128,7 +128,9 @@ Estudiantes                        </div>
          <td><?php echo $row['celular']; ?> </td>
 
          <th> <a href="modulos/modificar.php?id=<?php echo $row['id_estudiante']; ?>"> Modificar</a> 
-          |   <a  target="_blank" href="modulos/imprimir.php?id=<?php echo $row['id_estudiante']; ?>">Imprimir ficha</a> </th>
+          |   <a  target="_blank" href="modulos/imprimir.php?id=<?php echo $row['id_estudiante']; ?>">Imprimir ficha</a>| 
+          <a href="ficha_medica1.php?id=<?php echo $row['id_estudiante']; ?>">
+ Ficha medica</a> </th>
     
          </tr>
 

@@ -3,7 +3,7 @@
 <head>
       <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Howard Garden</title>
+    <title>Howard Gardner</title>
     <!-- Bootstrap Styles-->
     <link href="assets/css/bootstrap.css" rel="stylesheet" />
      <!-- FontAwesome Styles-->
@@ -27,11 +27,11 @@ include("sql/mostrar.php");
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
                     <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar">df</span>
-                    <span class="icon-bar">dfs</span>
-                    <span class="icon-bar">fds</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="home.php"><i class="fa fa-gear"></i> <strong>Howard</strong></a>
+                <a class="navbar-brand" href="#"><i class="fa fa-gear"></i> <strong>Howard</strong></a>
             </div>
 
             <ul class="nav navbar-top-links navbar-right">
@@ -109,7 +109,7 @@ Estudiantes                        </div>
                                     <?php 
 
             include("sql/conexion.php");
-            $query = "SELECT estudiante.id_estudiante ,estudiante.NIE, estudiante.grado,CONCAT(informacion_encargado.nombre, ' ', informacion_encargado.apellido) As Nombre , estudiante.fecha_nacimiento, estudiante.lugar_nacimiento, estudiante.edad, estudiante.estudio_anterior, estudiante.razon_retiro,estudiante.nombre as nombree ,estudiante.apellido as apellidoe, estudiante.direccion_casa, estudiante.telefono_casa, estudiante.genero, informacion_encargado.nombre, informacion_encargado.apellido, informacion_encargado.correo, informacion_encargado.celular FROM informacion_encargado INNER JOIN estudiante ON estudiante.id_estudiante = informacion_encargado.id_estudiante INNER JOIN encargado ON informacion_encargado.id_encargado = encargado.id_encargado WHERE encargado.id_encargado = 3 ";
+            $query = "SELECT estudiante.id_estudiante ,estudiante.NIE, estudiante.grado,CONCAT(informacion_encargado.nombre, ' ', informacion_encargado.apellido) As Nombre , estudiante.fecha_nacimiento, estudiante.lugar_nacimiento, estudiante.edad, estudiante.estudio_anterior, estudiante.razon_retiro,estudiante.nombre as nombree ,estudiante.apellido as apellidoe, estudiante.direccion_casa, estudiante.telefono_casa, estudiante.genero, informacion_encargado.nombre, informacion_encargado.apellido, informacion_encargado.correo, informacion_encargado.celular FROM informacion_encargado INNER JOIN estudiante ON estudiante.id_estudiante = informacion_encargado.id_estudiante INNER JOIN encargado ON informacion_encargado.id_encargado = encargado.id_encargado WHERE encargado.id_encargado = 3 and estudiante.grado > 0 ORDER BY  estudiante.grado ASC";
             $resultado = $conexion -> query($query);
             while ($row = $resultado -> fetch_assoc()) {
 
@@ -127,7 +127,9 @@ Estudiantes                        </div>
          <td><?php echo $row['Nombre']; ?> </td>
          <td><?php echo $row['celular']; ?> </td>
 
-         <th>   <a  target="_blank" href="modulos/imprimir.php?id=<?php echo $row['id_estudiante']; ?>">Imprimir ficha</a> </th>
+         <th>   <a  target="_blank" href="modulos/imprimir.php?id=<?php echo $row['id_estudiante']; ?>">Imprimir Informacion</a>| 
+          <a href="ficha_medica.php?id=<?php echo $row['id_estudiante']; ?>">
+ Ficha medica</a><br>              </th>
     
          </tr>
 

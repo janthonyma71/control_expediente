@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Howard</title>
+    <title>Howard Gardner</title>
     <!-- Bootstrap Styles-->
     <link href="assets/css/bootstrap.css" rel="stylesheet" />
     <!-- FontAwesome Styles-->
@@ -32,7 +32,7 @@ include("sql/mostrar.php");
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="home.php"><i class="fa fa-gear"></i> <strong>Howard</strong></a>
+                <a class="navbar-brand" href="#"><i class="fa fa-gear"></i> <strong>Howard</strong></a>
             </div>
 
             <ul class="nav navbar-top-links navbar-right">

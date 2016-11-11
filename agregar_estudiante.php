@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Colegio HowardGarden</title>
+    <title>Howard Gardner</title>
     <!-- Bootstrap Styles-->
     <link href="assets/css/bootstrap.css" rel="stylesheet" />
     <!-- FontAwesome Styles-->
@@ -33,7 +33,7 @@ include("sql/mostrar.php");
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="home.php"><i class="fa fa-gear"></i> <strong>Howard</strong></a>
+                <a class="navbar-brand" href="#"><i class="fa fa-gear"></i> <strong>Howard</strong></a>
             </div>
 
             <ul class="nav navbar-top-links navbar-right">
@@ -81,7 +81,7 @@ include_once('sql/pantallas.php') ?>
                         <div class="panel panel-default">
                             <div class="panel-heading col-md-12">
 
-                           <h2> Agregar Estudiante </h2><br>              </div>
+                           <h2> Agregar Estudiante </h2> <br> </div>
                             <div class="panel-body">
                           <form role="form" method="POST" action="sql/agregar_estudiante.php">
                                         <div class="col-xs-2">
